@@ -5,7 +5,7 @@
 
 <!-- Mirrored from themes.3rdwavemedia.com/trades/1.0.1/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jun 2016 05:21:15 GMT -->
 <head>
-  <title>Responsive website template for builders and tradesmen</title>
+  <title>SDCS</title>
   <!-- Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -393,27 +393,227 @@
   <section id="projects" class="projects-section section text-center">
     <div class="container">
       <h2 class="section-title">24*7 Courier Booking</h2>
-      <div class="section-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+      <div class="login-tabs">
 
-      <h2 class="section-title">Food Delivery</h2>
-      <div class="section-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
+          <li role="presentation"><a href="#registration" aria-controls="registration" role="tab" data-toggle="tab">Registration</a></li>
+          <li role="presentation"><a href="#guest" aria-controls="guest" role="tab" data-toggle="tab">Guest Courier Booking</a></li>
+          <li role="presentation"><a href="#tracking" aria-controls="tracking" role="tab" data-toggle="tab">Tracking</a></li>
+          <li role="presentation"><a href="#cancellation" aria-controls="cancellation" role="tab" data-toggle="tab">Cancellation</a></li>
+        </ul>
 
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="login">
+            <div class="padding-area">
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                 <form>
+                  <div class="form-group">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                  </div>
+                  <div class="form-group">
+                    <label for="enterPassword">Enter Password</label>
+                    <input type="password" class="form-control" id="enterPassword" placeholder="Enter Password">
+                  </div>
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-default orrange-btn">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="registration">
+         <div class="padding-area">
+           <form>
+             <div class="row">
+               <div class="col-sm-4  col-sm-offset-2">
+                <div class="form-group">
+                  <label for="fName">Name</label>
+                  <input type="text" class="form-control" id="fName" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                  <label for="cNumber">Contact Number</label>
+                  <input type="text" class="form-control" id="cNumber" placeholder="Enter your contact Number">
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="regEmail">Email address</label>
+                  <input type="email" class="form-control" id="regEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="regPassword">Password</label>
+                  <input type="password" class="form-control" id="regPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="conPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="conPassword" placeholder="Confirm Password">
+                </div>
+                <div class="text-right">
+                  <button type="submit" class="btn btn-default orrange-btn">Submit</button> &nbsp; &nbsp;
+                  <button type="submit" class="btn btn-default">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="guest">
+        <div class="padding-area">
+         <form>
+           <div class="row">
+             <div class="col-sm-4  col-sm-offset-2">
+              <div class="form-group">
+                <label for="">Delivery Time </label>
+                <select class="form-control" id="customerSelect">
+                  <option value="4hours">4 hours</option>
+                  <option value="24hours">24 hours</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pickUpArea">Pick Up Area</label>
+                <input type="text" class="form-control" id="pickUpArea" placeholder="Enter Pick Up Area">
+              </div>
+              <div class="form-group">
+                <label for="">Vehicle Type </label>
+                <select class="form-control" id="vehType">
+                  <option value="00">--Vehicle Type--</option>
+                  <option value="Bike">Bike</option>
+                  <option value="Scooty">Scooty</option>
+                  <option value="Auto">Auto</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="">Weight of Item </label>
+                <select class="form-control" id="courierWeight">
+                  <option value="3">Below 5 kg</option>
+                  <option value="6">5 Kg's - 6 Kg's</option>
+                  <option value="7">6 Kg's - 7 Kg's</option>
+                  <option value="8">7 Kg's - 8 Kg's</option>
+                  <option value="9">8 Kg's - 9 Kg's</option>
+                  <option value="10">9 Kg's - 10 Kg's</option>
+                  <option value="11">Above 10 Kg's</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="destinationArea">Destination Area</label>
+                <input type="text" class="form-control" id="destinationArea" placeholder="Enter Destination Area">
+              </div>
+              <div class="form-group">
+                <label for="">Delivery Boys needed </label>
+                <select class="form-control" id="">
+                  <option value="--select delivery boys--">--Delivery Boys needed--</option>
+                  <option value="onePerson">One Delivery boy</option>
+                  <option value="twoPerson">Two Delivery Boys</option>
+                </select>
+              </div>
+              <div class="text-right">
+                <button type="submit" class="btn btn-default orrange-btn">Submit</button> &nbsp; &nbsp;
+                <button type="submit" class="btn btn-default">Cancel</button>
+              </div>
+            </div>
+          </div>
 
-    </div><!--//container-->
-  </section><!--//section-->
-
-  <section id="faqs" class="section faq-section">
-    <div class="container">
-      <h2 class="section-title text-center">Frequently Asked Questions</h2>
+        </form>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tracking">
+      <div class="padding-area">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+           <form>
+            <div class="form-group">
+              <label for="trackingNumber">Tracking Number</label>
+              <input type="text" class="form-control" id="trackingNumber" placeholder="Enter Tracking Number">
+            </div>
+            <div class="text-right">
+              <button type="submit" class="btn btn-default orrange-btn">Track</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="cancellation">
+    <div class="padding-area">
       <div class="row">
-        <div class="col-sm-6 col-xs-12">
+        <div class="col-sm-4 col-sm-offset-4">
+         <form>
+          <div class="form-group">
+            <label for="bookingId">Booking Id</label>
+            <input type="text" class="form-control" id="bookingId" placeholder="Enter Booking Id">
+          </div>
+          <div class="text-right">
+            <button type="submit" class="btn btn-default orrange-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Food Delivery</h2>
+<div class="section-intro">Restaurants Can Book Delivery Boy here</div>
+<div class="food-delivery">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+     <form>
+      <div class="form-group">
+        <label for="userName">User Name</label>
+        <input type="text" placeholder="Enter User Name" id="userName" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="enterUserPassword">Enter Password</label>
+        <input type="password" placeholder="Enter Password" id="enterUserPassword" class="form-control">
+      </div>
+      <div class="text-right">
+        <button class="btn btn-default orrange-btn" type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+
+</div><!--//container-->
+</section><!--//section-->
+
+<section id="faqs" class="section faq-section">
+  <div class="container">
+    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <div class="panel">
+          <div class="panel-heading">
+            <h4 class="panel-title"><a data-parent="#accordion"
+              data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-info-circle" aria-hidden="true"></i>Can I viverra sit amet quam eget lacinia?</a></h4>
+            </div>
+
+            <div class="panel-collapse collapse" id="faq1">
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
+              </div>
+            </div>
+          </div><!--//panel-->
+
           <div class="panel">
             <div class="panel-heading">
               <h4 class="panel-title"><a data-parent="#accordion"
-                data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-info-circle" aria-hidden="true"></i>Can I viverra sit amet quam eget lacinia?</a></h4>
+                data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-info-circle"></i>What is the ipsum dolor sit amet quam tortor?</a></h4>
               </div>
 
-              <div class="panel-collapse collapse" id="faq1">
+              <div class="panel-collapse collapse" id="faq2">
                 <div class="panel-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                 </div>
@@ -423,10 +623,10 @@
             <div class="panel">
               <div class="panel-heading">
                 <h4 class="panel-title"><a data-parent="#accordion"
-                  data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-info-circle"></i>What is the ipsum dolor sit amet quam tortor?</a></h4>
+                  data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-info-circle"></i>How does lorem ipsum work?</a></h4>
                 </div>
 
-                <div class="panel-collapse collapse" id="faq2">
+                <div class="panel-collapse collapse" id="faq3">
                   <div class="panel-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                   </div>
@@ -436,37 +636,37 @@
               <div class="panel">
                 <div class="panel-heading">
                   <h4 class="panel-title"><a data-parent="#accordion"
-                    data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-info-circle"></i>How does lorem ipsum work?</a></h4>
+                    data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-info-circle"></i>Can I ipsum dolor sit amet nascetur ridiculus?</a></h4>
                   </div>
 
-                  <div class="panel-collapse collapse" id="faq3">
+                  <div class="panel-collapse collapse" id="faq4">
                     <div class="panel-body">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                     </div>
                   </div>
                 </div><!--//panel-->
-
+              </div>
+              <div class="col-sm-6 col-xs-12">
                 <div class="panel">
                   <div class="panel-heading">
                     <h4 class="panel-title"><a data-parent="#accordion"
-                      data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-info-circle"></i>Can I ipsum dolor sit amet nascetur ridiculus?</a></h4>
+                      data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-info-circle"></i>Is it possible to tellus eget auctor condimentum?</a></h4>
                     </div>
 
-                    <div class="panel-collapse collapse" id="faq4">
+                    <div class="panel-collapse collapse" id="faq5">
                       <div class="panel-body">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                       </div>
                     </div>
                   </div><!--//panel-->
-                </div>
-                <div class="col-sm-6 col-xs-12">
+
                   <div class="panel">
                     <div class="panel-heading">
                       <h4 class="panel-title"><a data-parent="#accordion"
-                        data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-info-circle"></i>Is it possible to tellus eget auctor condimentum?</a></h4>
+                        data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-info-circle"></i>Would it elementum turpis semper imperdiet?</a></h4>
                       </div>
 
-                      <div class="panel-collapse collapse" id="faq5">
+                      <div class="panel-collapse collapse" id="faq6">
                         <div class="panel-body">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                         </div>
@@ -476,10 +676,10 @@
                     <div class="panel">
                       <div class="panel-heading">
                         <h4 class="panel-title"><a data-parent="#accordion"
-                          data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-info-circle"></i>Would it elementum turpis semper imperdiet?</a></h4>
+                          data-toggle="collapse" class="panel-toggle" href="#faq7"><i class="fa fa-info-circle"></i>How can I imperdiet lorem sem non nisl?</a></h4>
                         </div>
 
-                        <div class="panel-collapse collapse" id="faq6">
+                        <div class="panel-collapse collapse" id="faq7">
                           <div class="panel-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                           </div>
@@ -489,330 +689,317 @@
                       <div class="panel">
                         <div class="panel-heading">
                           <h4 class="panel-title"><a data-parent="#accordion"
-                            data-toggle="collapse" class="panel-toggle" href="#faq7"><i class="fa fa-info-circle"></i>How can I imperdiet lorem sem non nisl?</a></h4>
+                            data-toggle="collapse" class="panel-toggle" href="#faq8"><i class="fa fa-info-circle"></i>Can I imperdiet massa ut?</a></h4>
                           </div>
 
-                          <div class="panel-collapse collapse" id="faq7">
+                          <div class="panel-collapse collapse" id="faq8">
                             <div class="panel-body">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
                             </div>
                           </div>
                         </div><!--//panel-->
+                      </div>
+                    </div><!--//row-->
+                  </div><!--//container-->
+                </section><!--//section-->
 
-                        <div class="panel">
-                          <div class="panel-heading">
-                            <h4 class="panel-title"><a data-parent="#accordion"
-                              data-toggle="collapse" class="panel-toggle" href="#faq8"><i class="fa fa-info-circle"></i>Can I imperdiet massa ut?</a></h4>
-                            </div>
-
-                            <div class="panel-collapse collapse" id="faq8">
-                              <div class="panel-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum ut erat a ultricies. Phasellus non auctor nisi, id aliquet lectus. Vestibulum libero eros, aliquet at tempus ut, scelerisque sit amet nunc. Vivamus id porta neque, in pulvinar ipsum. Vestibulum sit amet quam sem. Pellentesque accumsan consequat venenatis. Pellentesque sit amet justo dictum, interdum odio non, dictum nisi. Fusce sit amet turpis eget nibh elementum sagittis. Nunc consequat lacinia purus, in consequat neque consequat id.
-                              </div>
-                            </div>
-                          </div><!--//panel-->
+                <section id="contact" class="contact-section text-center">
+                  <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-intro">
+                      <p>Working PHP contact form included below to save you time. All you need to do is change the email address in the mailer.php file. Lorem ipsum dolor sit amet, consectetuer adipiscing elit commodo ligula eget.</p>
+                    </div>
+                    <ul class="contact-info-list list-inline">
+                      <li class="item">
+                        <span class="custom-icon icon-telephone_signal"></span>
+                        <span class="info"><a href="#">+91 9535337626</a></span>
+                      </li>
+                      <li class="item">
+                        <span class="custom-icon icon-email"></span>
+                        <span class="info"><a href="#">info@sdcs.me</a></span>
+                      </li>
+                    </ul>
+                    <form id="contact-form" class="contact-form form" method="post" action="http://themes.3rdwavemedia.com/trades/1.0.1/mailer.php">
+                      <div id="form-messages" class="text-center"></div>
+                      <div class="row text-left">
+                        <div class="name-group col-sm-6 col-xs-12 form-group">
+                          <div class="form-group-inner">
+                            <label for="cname">Name</label>
+                            <input type="text" class="form-control" id="cname" name="name" placeholder="Your name" minlength="2"  aria-required="true" required>
+                          </div>
+                        </div><!--//name-group-->
+                        <div class="email-group col-sm-6 col-xs-12 form-group">
+                          <div class="form-group-inner">
+                            <label for="cemail">Email</label>
+                            <input type="email" class="form-control" id="cemail" name="email" placeholder="Your email address" aria-required="true" required>
+                          </div>
+                        </div><!--//email-group-->
+                        <div class="phone-group col-sm-6 col-xs-12 form-group">
+                          <div class="form-group-inner">
+                            <label for="cphone">Phone</label>
+                            <input type="tel" class="form-control" id="cphone" name="phone" placeholder="Your phone number" aria-required="true" required>
+                          </div>
+                        </div><!--//phone-group-->
+                        <div class="zipcode-group col-sm-6 col-xs-12 form-group">
+                          <div class="form-group-inner">
+                            <label for="czipcode">Zip Code</label>
+                            <input type="text" class="form-control" id="czipcode" name="zipcode" placeholder="eg.94101" aria-required="true" required>
+                          </div>
+                        </div><!--//zipcode-group-->
+                        <div class="message-group col-xs-12 form-group">
+                          <div class="form-group-inner">
+                            <label for="cmessage">Your project &amp; additional info</label>
+                            <textarea class="form-control" id="cmessage" name="message" rows="6" placeholder="Enter your project info here..."  required></textarea>
+                          </div>
+                        </div><!--//message-group-->
+                        <div class="col-xs-12 form-group">
+                          <button type="submit" class="btn btn-block btn-primary btn-cta">Submit</button>
                         </div>
                       </div><!--//row-->
-                    </div><!--//container-->
-                  </section><!--//section-->
+                    </form><!--//contact-form-->
+                  </div><!--//container-->
+                </section><!--//contact-->
 
-                  <section id="contact" class="contact-section text-center">
-                    <div class="container">
-                      <h2 class="section-title">Contact Us</h2>
-                      <div class="contact-intro">
-                        <p>Working PHP contact form included below to save you time. All you need to do is change the email address in the mailer.php file. Lorem ipsum dolor sit amet, consectetuer adipiscing elit commodo ligula eget.</p>
-                      </div>
-                      <ul class="contact-info-list list-inline">
-                        <li class="item">
-                          <span class="custom-icon icon-telephone_signal"></span>
-                          <span class="info"><a href="#">+91 9535337626</a></span>
-                        </li>
-                        <li class="item">
-                          <span class="custom-icon icon-email"></span>
-                          <span class="info"><a href="#">info@sdcs.me</a></span>
-                        </li>
-                      </ul>
-                      <form id="contact-form" class="contact-form form" method="post" action="http://themes.3rdwavemedia.com/trades/1.0.1/mailer.php">
-                        <div id="form-messages" class="text-center"></div>
-                        <div class="row text-left">
-                          <div class="name-group col-sm-6 col-xs-12 form-group">
-                            <div class="form-group-inner">
-                              <label for="cname">Name</label>
-                              <input type="text" class="form-control" id="cname" name="name" placeholder="Your name" minlength="2"  aria-required="true" required>
-                            </div>
-                          </div><!--//name-group-->
-                          <div class="email-group col-sm-6 col-xs-12 form-group">
-                            <div class="form-group-inner">
-                              <label for="cemail">Email</label>
-                              <input type="email" class="form-control" id="cemail" name="email" placeholder="Your email address" aria-required="true" required>
-                            </div>
-                          </div><!--//email-group-->
-                          <div class="phone-group col-sm-6 col-xs-12 form-group">
-                            <div class="form-group-inner">
-                              <label for="cphone">Phone</label>
-                              <input type="tel" class="form-control" id="cphone" name="phone" placeholder="Your phone number" aria-required="true" required>
-                            </div>
-                          </div><!--//phone-group-->
-                          <div class="zipcode-group col-sm-6 col-xs-12 form-group">
-                            <div class="form-group-inner">
-                              <label for="czipcode">Zip Code</label>
-                              <input type="text" class="form-control" id="czipcode" name="zipcode" placeholder="eg.94101" aria-required="true" required>
-                            </div>
-                          </div><!--//zipcode-group-->
-                          <div class="message-group col-xs-12 form-group">
-                            <div class="form-group-inner">
-                              <label for="cmessage">Your project &amp; additional info</label>
-                              <textarea class="form-control" id="cmessage" name="message" rows="6" placeholder="Enter your project info here..."  required></textarea>
-                            </div>
-                          </div><!--//message-group-->
-                          <div class="col-xs-12 form-group">
-                            <button type="submit" class="btn btn-block btn-primary btn-cta">Submit</button>
-                          </div>
-                        </div><!--//row-->
-                      </form><!--//contact-form-->
-                    </div><!--//container-->
-                  </section><!--//contact-->
+                <!-- ******FOOTER****** -->
+                <footer class="footer">
+                  <div class="footer-main container">
+                    <div class="row">
+                      <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
+                        <h3 class="col-title">About SDCS</h3>
+                        <div class="intro">Lorem ipsum dolor sit amet, consectetuer <br>adipiscing elit. Aenean commodo ligula.</div>
+                        <ul class="footer-menu list-unstyled">
+                          <li><a href="#" data-toggle="modal" data-target="#project-modal-1">Terms &amp; Conditions</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#project-modal-2">Privacy Policy</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#project-modal-3">Disclaimer Policy</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#project-modal-4">Cancellation and Refund Policy</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#project-modal-5">Shipping and Delivery Policy</a></li>
+                        </ul>
+                      </div><!--//footer-col-->
+                      <div class="footer-col contact-us-col col-md-4 col-sm-6 col-xs-12">
+                        <h3 class="col-title">Contact Us</h3>
+                        <ul class="footer-contact-list list-unstyled">
+                          <li class="item">
+                            <span class="custom-icon icon-telephone_signal"></span>
+                            <span class="info"><a href="#"> +91 9535337626</a></span>
+                          </li>
+                          <li class="item">
+                            <span class="custom-icon icon-email"></span>
+                            <span class="info"><a href="#">info@sdcs.me</a></span>
+                          </li>
+                          <li class="item">
+                            <span class="custom-icon icon-map_pin"></span>
+                            <span class="info">
 
-                  <!-- ******FOOTER****** -->
-                  <footer class="footer">
-                    <div class="footer-main container">
-                      <div class="row">
-                        <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
-                          <h3 class="col-title">About SDCS</h3>
-                          <div class="intro">Lorem ipsum dolor sit amet, consectetuer <br>adipiscing elit. Aenean commodo ligula.</div>
-                          <ul class="footer-menu list-unstyled">
-                            <li><a href="#" data-toggle="modal" data-target="#project-modal-1">Terms &amp; Conditions</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#project-modal-2">Privacy Policy</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#project-modal-3">Disclaimer Policy</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#project-modal-4">Cancellation and Refund Policy</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#project-modal-5">Shipping and Delivery Policy</a></li>
-                          </ul>
-                        </div><!--//footer-col-->
-                        <div class="footer-col contact-us-col col-md-4 col-sm-6 col-xs-12">
-                          <h3 class="col-title">Contact Us</h3>
-                          <ul class="footer-contact-list list-unstyled">
-                            <li class="item">
-                              <span class="custom-icon icon-telephone_signal"></span>
-                              <span class="info"><a href="#"> +91 9535337626</a></span>
-                            </li>
-                            <li class="item">
-                              <span class="custom-icon icon-email"></span>
-                              <span class="info"><a href="#">info@sdcs.me</a></span>
-                            </li>
-                            <li class="item">
-                              <span class="custom-icon icon-map_pin"></span>
-                              <span class="info">
+                              <span class="street-address">PCR Techno Solutions</span><br>
+                              <span class="region">#216,2nd cross,14th block,Nagarbhavi</span><br>
+                              <span class="postal-code">Bangalore-72</span><br>
+                              <span class="country-name">UK</span>
 
-                                <span class="street-address">PCR Techno Solutions</span><br>
-                                <span class="region">#216,2nd cross,14th block,Nagarbhavi</span><br>
-                                <span class="postal-code">Bangalore-72</span><br>
-                                <span class="country-name">UK</span>
-
-                              </span>
-                            </li>
-                          </ul>
-                        </div><!--//footer-col-->
-                        <div class="footer-col follow-us-col col-md-4 col-xs-12">
-                          <h3 class="col-title">Follow Us</h3>
-                          <div class="social-container">
-                            <ul class="list-inline social-list">
-                              <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                              <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                              <li class="social-item"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                              <li class="social-item"><a href="#"><i class="fa fa-play"></i></a></li>
-                            </ul><!--//social-list-->
-                          </div><!--//social-container-->
+                            </span>
+                          </li>
+                        </ul>
+                      </div><!--//footer-col-->
+                      <div class="footer-col follow-us-col col-md-4 col-xs-12">
+                        <h3 class="col-title">Follow Us</h3>
+                        <div class="social-container">
+                          <ul class="list-inline social-list">
+                            <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-item"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                            <li class="social-item"><a href="#"><i class="fa fa-play"></i></a></li>
+                          </ul><!--//social-list-->
+                        </div><!--//social-container-->
 
 
-                        </div><!--//footer-col-->
-                      </div><!--//row-->
+                      </div><!--//footer-col-->
+                    </div><!--//row-->
 
 
 
-                    </div><!--//container-->
-                    <div class="bottombar text-center">
+                  </div><!--//container-->
+                  <div class="bottombar text-center">
 
 
-                      <div class="copyright"> All rights reserved © 2014 SDCS.</div>
+                    <div class="copyright"> All rights reserved © 2014 SDCS.</div>
 
-                    </div><!--//bottombar-->
-                  </footer><!--//footer-->
+                  </div><!--//bottombar-->
+                </footer><!--//footer-->
 
-                  <!-- Privacy policy Modal 1 -->
-                  <div id="project-modal-1" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label">
-                    <div class="modal-dialog" role="document">
+                <!-- Privacy policy Modal 1 -->
+                <div id="project-modal-1" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="projectModal1Label">Terms &amp; Conditions</h4>
+                      </div><!--//modal-header-->
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="row">
+                            <div class="details col-xs-12">
+                              <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                            </div><!--//details-->
+                          </div><!--//row-->
+
+                        </div>
+                      </div><!--//modal-body-->
+                    </div><!--//modal-content-->
+                  </div>
+                </div><!--//modal-->
+
+                <!-- Privacy policy Modal 2 -->
+                <div id="project-modal-2" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="projectModal2Label">Privacy Policy</h4>
+                      </div><!--//modal-header-->
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="row">
+                            <div class="details col-xs-12">
+                              <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+
+                            </div><!--//details-->
+                          </div><!--//row-->
+
+                        </div>
+                      </div><!--//modal-body-->
+                    </div><!--//modal-content-->
+                  </div>
+                </div><!--//modal-->
+
+                <!-- Disclaimer Policy Modal 3 -->
+                <div id="project-modal-3" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="projectModal3Label">Disclaimer Policy</h4>
+                      </div><!--//modal-header-->
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="row">
+                            <div class="details col-xs-12">
+                              <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                            </div><!--//details-->
+                          </div><!--//row-->
+
+                        </div>
+                      </div><!--//modal-body-->
+                    </div><!--//modal-content-->
+                  </div>
+                </div><!--//modal-->
+
+                <!--Cancellation and Refund Policy Modal 4 -->
+                <div id="project-modal-4" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="projectModal3Label">Cancellation and Refund Policy</h4>
+                      </div><!--//modal-header-->
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="row">
+                            <div class="details col-xs-12">
+                              <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                            </div><!--//details-->
+                          </div><!--//row-->
+
+                        </div>
+                      </div><!--//modal-body-->
+                    </div><!--//modal-content-->
+                  </div>
+                </div><!--//modal-->
+
+                <!--Shipping and Delivery Policy Modal 5 -->
+                <div id="project-modal-5" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="projectModal3Label">Shipping and Delivery Policy</h4>
+                      </div><!--//modal-header-->
+                      <div class="modal-body">
+                        <div class="content">
+                          <div class="row">
+                            <div class="details col-xs-12">
+                              <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                            </div><!--//details-->
+                          </div><!--//row-->
+
+                        </div>
+                      </div><!--//modal-body-->
+                    </div><!--//modal-content-->
+                  </div>
+                </div><!--//modal-->
+
+
+                <!-- The Bootstrap Image Gallery lightbox -->
+                <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+                  <!-- The container for the modal slides -->
+                  <div class="slides"></div>
+                  <!-- Controls for the borderless lightbox -->
+                  <h3 class="title"></h3>
+                  <a class="prev">‹</a>
+                  <a class="next">›</a>
+                  <a class="close">×</a>
+                  <a class="play-pause"></a>
+                  <ol class="indicator"></ol>
+                  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                  <div class="modal fade" tabindex="-1" >
+                    <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title text-center" id="projectModal1Label">Terms &amp; Conditions</h4>
-                        </div><!--//modal-header-->
-                        <div class="modal-body">
-                          <div class="content">
-                            <div class="row">
-                              <div class="details col-xs-12">
-                                <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-
-                              </div><!--//details-->
-                            </div><!--//row-->
-
-                          </div>
-                        </div><!--//modal-body-->
-                      </div><!--//modal-content-->
-                    </div>
-                  </div><!--//modal-->
-
-                  <!-- Privacy policy Modal 2 -->
-                  <div id="project-modal-2" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title text-center" id="projectModal2Label">Privacy Policy</h4>
-                        </div><!--//modal-header-->
-                        <div class="modal-body">
-                          <div class="content">
-                            <div class="row">
-                              <div class="details col-xs-12">
-                                <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
-
-                              </div><!--//details-->
-                            </div><!--//row-->
-
-                          </div>
-                        </div><!--//modal-body-->
-                      </div><!--//modal-content-->
-                    </div>
-                  </div><!--//modal-->
-
-                  <!-- Disclaimer Policy Modal 3 -->
-                  <div id="project-modal-3" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title text-center" id="projectModal3Label">Disclaimer Policy</h4>
-                        </div><!--//modal-header-->
-                        <div class="modal-body">
-                          <div class="content">
-                            <div class="row">
-                              <div class="details col-xs-12">
-                                <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-
-                              </div><!--//details-->
-                            </div><!--//row-->
-
-                          </div>
-                        </div><!--//modal-body-->
-                      </div><!--//modal-content-->
-                    </div>
-                  </div><!--//modal-->
-
-                  <!--Cancellation and Refund Policy Modal 4 -->
-                  <div id="project-modal-4" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title text-center" id="projectModal3Label">Cancellation and Refund Policy</h4>
-                        </div><!--//modal-header-->
-                        <div class="modal-body">
-                          <div class="content">
-                            <div class="row">
-                              <div class="details col-xs-12">
-                                <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-
-                              </div><!--//details-->
-                            </div><!--//row-->
-
-                          </div>
-                        </div><!--//modal-body-->
-                      </div><!--//modal-content-->
-                    </div>
-                  </div><!--//modal-->
-
-                  <!--Shipping and Delivery Policy Modal 5 -->
-                  <div id="project-modal-5" class="project-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title text-center" id="projectModal3Label">Shipping and Delivery Policy</h4>
-                        </div><!--//modal-header-->
-                        <div class="modal-body">
-                          <div class="content">
-                            <div class="row">
-                              <div class="details col-xs-12">
-                                <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-
-                              </div><!--//details-->
-                            </div><!--//row-->
-
-                          </div>
-                        </div><!--//modal-body-->
-                      </div><!--//modal-content-->
-                    </div>
-                  </div><!--//modal-->
-
-
-                  <!-- The Bootstrap Image Gallery lightbox -->
-                  <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
-                    <!-- The container for the modal slides -->
-                    <div class="slides"></div>
-                    <!-- Controls for the borderless lightbox -->
-                    <h3 class="title"></h3>
-                    <a class="prev">‹</a>
-                    <a class="next">›</a>
-                    <a class="close">×</a>
-                    <a class="play-pause"></a>
-                    <ol class="indicator"></ol>
-                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-                    <div class="modal fade" tabindex="-1" >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title"></h4>
-                          </div>
-                          <div class="modal-body next"></div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default pull-left prev">
-                              <i class="glyphicon glyphicon-chevron-left"></i>
-                              Previous
-                            </button>
-                            <button type="button" class="btn btn-primary next">
-                              Next
-                              <i class="glyphicon glyphicon-chevron-right"></i>
-                            </button>
-                          </div>
+                          <button type="button" class="close" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                          </button>
+                          <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
-                  </div><!--blueimp-gallery-->
+                  </div>
+                </div><!--blueimp-gallery-->
 
 
-                  <!-- Main Javascript -->
-                  <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-                  <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-                  <script type="text/javascript" src="assets/plugins/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-                  <script type="text/javascript" src="assets/js/ajax-form.js"></script>
+                <!-- Main Javascript -->
+                <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+                <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+                <script type="text/javascript" src="assets/js/ajax-form.js"></script>
 
-                  <script type="text/javascript" src="assets/js/main.js"></script>
+                <script type="text/javascript" src="assets/js/main.js"></script>
 
-                  <!--[if !IE]>-->
-                  <script type="text/javascript" src="assets/js/animations.js"></script>
-                  <!--<![endif]-->
+                <!--[if !IE]>-->
+                <script type="text/javascript" src="assets/js/animations.js"></script>
+                <!--<![endif]-->
 
-                </body>
+              </body>
 
 
-                </html>
+              </html>
 

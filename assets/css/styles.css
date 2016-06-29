@@ -158,8 +158,8 @@ textarea {
   background-clip: padding-box;
 }
 #topcontrol:hover {
-  background: #1c59a2;
-  color: #fff;
+  background: #FF7618;
+  color: #333;
 }
 #topcontrol .fa {
   position: relative;
@@ -434,7 +434,7 @@ h1.logo img {
   margin-right: auto;
   font-weight: bold;
 }
-.nav > li > a {
+.header .nav > li > a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 12px;
   font-weight: 600;
@@ -443,12 +443,12 @@ h1.logo img {
   padding-right: 0;
   margin-right: 30px;
 }
-.nav > li > a:focus,
-.nav > li > a:hover {
+.header .nav > li > a:focus,
+.header .nav > li > a:hover {
   background: none;
   outline: none;
 }
-.nav > li.active > a {
+.header .nav > li.active > a {
   color: #fff;font-weight: bold;
 }
 /* ======= Footer ======= */
@@ -733,7 +733,7 @@ h1.logo img {
 }
 /* ======= About Section ======= */
 .about-section {
-  background: #f5f5f5;
+  background: #fff;
 }
 .about-desc {
   max-width: 720px;
@@ -1212,13 +1212,13 @@ h1.logo img {
   .modal-dialog {
     width: 80%;
   }
-  .nav > li > a {
+  .header .nav > li > a {
     margin-right: 15px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .nav > li > a {
+  .header .nav > li > a {
     margin-right: 30px;
   }
 }
@@ -1348,4 +1348,41 @@ body {
 }
 .config-panel .close .fa {
   color: #fff;
+}
+.login-tabs .tab-content > .active {
+  background-color: #fff;
+}
+.login-tabs .nav-tabs > li.active > a,
+.login-tabs .nav-tabs > li.active > a:focus,
+.login-tabs .nav-tabs > li.active > a:hover  {
+  border-radius: 0px;border-top: 4px solid #FF7618;
+  color: #343e49;
+}
+.login-tabs {
+  margin-bottom: 30px;
+}
+.login-tabs .nav-tabs > li > a {
+  border: none;color: #FF7618;border-top: 4px solid transparent;
+}
+.login-tabs .tab-content {
+  text-align: left;
+  border: 1px solid #ddd;border-top: none;
+}
+.login-tabs .tab-content .padding-area {
+  padding: 30px;
+}
+.btn {
+  border-radius: 0px;
+}
+.btn-default.orrange-btn {
+  background-color: #FF7618;
+  border-color: #FF7618;
+  color: #333;
+}
+.login-tabs .form-group {
+  margin-bottom: 15px;
+}
+.food-delivery {
+  background-color: #fff;border: 1px solid #ddd;
+  padding: 30px;text-align: left;
 }
